@@ -61,7 +61,7 @@ def build_likelihood(
     # Read in sacc data
     sacc_file_nm = "cluster_redshift_richness_deltasigma_sacc_data.fits"
     sacc_path = os.path.expanduser(
-        os.path.expandvars("${FIRECROWN_DIR}/examples/cluster_number_counts/")
+        os.path.expandvars("./")
     )
     sacc_data = sacc.Sacc.load_fits(os.path.join(sacc_path, sacc_file_nm))
     likelihood.read(sacc_data)
